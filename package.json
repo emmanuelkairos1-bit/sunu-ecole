@@ -1,0 +1,21 @@
+{
+  "name": "sunu-ecole",
+  "version": "1.0.0",
+  "description": "Sunu École - suivi de discipline scolaire",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "argon2": "^0.41.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "multer": "^2.0.0",
+    "nodemailer": "^6.9.14",
+    "zxcvbn": "^4.4.2"
+  }
+}

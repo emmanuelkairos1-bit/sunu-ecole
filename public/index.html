@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunu École</title>
+<meta name="description" content="Sunu École : le logiciel de suivi de discipline pour les établissements scolaires.">
+<meta name="theme-color" content="#050A1A">
+<link rel="icon" type="image/png" href="/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="loader" class="loader">
+  <div class="shapes"><i></i><i></i><i></i><i></i><i></i></div>
+  <img src="/img/logo-white.png" alt="Sunu École" class="loader-logo">
+  <h1 id="loaderName" aria-label="Sunu École"></h1>
+  <div class="loader-bottom"><p id="loaderMsg">Chargement...</p>
+    <div class="bar"><span id="loaderBar"></span></div><b id="loaderPct">0%</b></div>
+</div>
+<div id="busy" class="busy" hidden><div class="busy-box"><div class="spin"></div><p id="busyTxt"></p><div class="bar"><span id="busyBar"></span></div></div></div>
+<div id="offline" class="offline" hidden>Mode hors-ligne - Synchronisation au retour.</div>
+<header id="hdr" class="hdr"><div class="hdr-in">
+  <a href="/" data-link class="brand"><img src="/img/logo-mark.png" alt="" class="brand-mark"><span>Sunu École</span></a>
+  <button id="burger" class="burger" aria-label="Menu"><i data-lucide="menu"></i></button>
+  <nav id="nav" class="nav"></nav>
+</div></header>
+<main id="main"><div id="view"></div></main>
+<div id="toasts" class="toasts"></div>
+<div id="modal-root"></div>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/public.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/tools.js"></script>
+</body>
+</html>
